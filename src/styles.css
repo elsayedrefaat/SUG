@@ -1,0 +1,136 @@
+/* ============================================================
+   FOE — Color system
+   ============================================================ */
+
+:root {
+  /* ---- Brand core ---- */
+  --foe-gold:            #f4c744;
+  --foe-gold-deep:       #caab72;
+  --foe-charcoal:        #2c2c2c;
+  --foe-teal:            #2c6e75;
+
+  /* ---- Brand gold ramp ---- */
+  --gold-light:          #fef9ec;
+  --gold-light-hover:    #fdf7e3;
+  --gold-light-active:   #fceec5;
+  --gold-normal:         #f4c744;
+  --gold-normal-hover:   #dcb33d;
+  --gold-normal-active:  #c39f36;
+  --gold-dark:           #b79533;
+  --gold-dark-hover:     #927729;
+  --gold-dark-active:    #6e5a1f;
+  --gold-darker:         #554618;
+
+  /* ---- Extended neutrals ---- */
+  --foe-ink-900:         #0d1019;
+  --foe-ink-800:         #0f0f0f;
+  --foe-ink-700:         #161616;
+  --foe-ink-600:         #2f2f2f;
+  --foe-ink-500:         #454545;
+  --foe-navy:            #141b34;
+  --foe-slate:           #8e98a8;
+  --foe-line:            #e9ebf8;
+  --foe-gray-300:        #cccccc;
+  --foe-gray-200:        #c5c5c5;
+  --foe-mist:            #f9fafb;
+  --foe-paper:           #fdfdfd;
+  --foe-white:           #ffffff;
+  --foe-black:           #000000;
+
+  /* ---- Teal / cyan family ---- */
+  --foe-teal-800:        #004d52;
+  --foe-teal-600:        #2c6e75;
+
+  /* ---- Semantic status ---- */
+  --foe-success:         #17b26a;
+  --foe-success-alt:     #43b75c;
+  --foe-warning:         #ffaa00;
+  --foe-error:           #f04438;
+  --foe-error-alt:       #ee453f;
+  --foe-info:            #2e90fa;
+
+  /* ---- Semantic aliases ---- */
+  --color-bg:            var(--foe-paper);
+  --color-bg-alt:        var(--foe-mist);
+  --color-bg-dark:       var(--foe-charcoal);
+  --color-bg-navy:       var(--foe-navy);
+  --surface-card:        var(--foe-white);
+  --surface-dark-card:   var(--foe-ink-600);
+
+  --text-primary:        var(--foe-ink-800);
+  --text-secondary:      var(--foe-ink-500);
+  --text-muted:          var(--foe-slate);
+  --text-on-dark:        var(--foe-paper);
+  --text-on-dark-muted:  var(--foe-gray-300);
+
+  --accent:              var(--foe-gold-deep);
+  --accent-strong:       var(--foe-gold);
+  --secondary:           var(--foe-teal);
+
+  --border-subtle:       var(--foe-line);
+  --border-strong:       var(--foe-gray-300);
+  --border-accent:       var(--foe-teal-800);
+
+  --status-success:      var(--foe-success);
+  --status-warning:      var(--foe-warning);
+  --status-error:        var(--foe-error);
+  --status-info:         var(--foe-info);
+
+  /* ---- Typography ---- */
+  --font-primary:  'Cairo', 'Segoe UI', Tahoma, sans-serif;
+  --font-ui:       'Inter', 'Cairo', system-ui, sans-serif;
+  --font-accent:   'Nunito', 'Cairo', sans-serif;
+
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+  --fw-black:    900;
+
+  --fs-display:   40px;
+  --fs-h1:        32px;
+  --fs-h2:        24px;
+  --fs-h3:        20px;
+  --fs-title:     18px;
+  --fs-body-lg:   18px;
+  --fs-body:      16px;
+  --fs-body-sm:   14px;
+  --fs-caption:   12px;
+  --fs-micro:     10px;
+
+  --lh-tight:   1.15;
+  --lh-heading: 1.25;
+  --lh-body:    1.6;
+  --lh-relaxed: 1.75;
+
+  /* ---- Radius & spacing ---- */
+  --radius-xs:   4px;
+  --radius-sm:   8px;
+  --radius-md:   16px;
+  --radius-lg:   20px;
+  --radius-xl:   24px;
+  --radius-pill: 999px;
+
+  --space-1:  8px;
+  --space-2:  16px;
+  --space-3:  20px;
+  --space-4:  24px;
+  --space-5:  28px;
+  --space-6:  32px;
+  --space-7:  36px;
+  --space-section: 80px;
+
+  --shadow-card:   0 4px 20px rgba(0,0,0,0.08);
+  --shadow-raised: 0 8px 28px rgba(0,0,0,0.15);
+  --shadow-soft:   0 2px 8px rgba(0,0,0,0.06);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--foe-paper); }
+body { font-family: var(--font-primary); }
+#root { min-height: 100vh; }
+
+@keyframes foe-shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+@keyframes foe-rot { to { transform: rotate(360deg); } }
+.foe-spin { animation: foe-rot .7s linear infinite; }
+::selection { background: var(--gold-light-active); }
