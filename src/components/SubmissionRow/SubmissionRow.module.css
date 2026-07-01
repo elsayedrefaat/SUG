@@ -1,0 +1,103 @@
+.card { overflow: hidden; }
+
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  direction: rtl;
+  text-align: right;
+}
+.trigger.open { background: var(--foe-mist); }
+
+.typeIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.summary { flex: 1; min-width: 0; }
+.title {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--foe-ink-800);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.meta {
+  font-family: var(--font-primary);
+  font-size: 13px;
+  color: var(--foe-slate);
+  margin-top: 4px;
+}
+
+.chevron {
+  flex-shrink: 0;
+  transition: transform 0.18s;
+}
+.chevron.open { transform: rotate(180deg); }
+
+.details {
+  padding: 4px 20px 22px;
+  direction: rtl;
+  text-align: right;
+  border-top: 1px solid var(--foe-line);
+}
+.sectionTitle {
+  margin: 18px 0 10px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--foe-ink-800);
+}
+.response {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--foe-ink-500);
+  background: var(--foe-mist);
+  border-radius: 12px;
+  padding: 16px;
+}
+.noAttachments {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  color: var(--foe-slate);
+}
+.attachments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.attachment {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 1px var(--foe-line);
+}
+.attachmentIcon { color: var(--foe-teal); }
+.attachmentInfo { flex: 1; min-width: 0; }
+.attachmentName {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  color: var(--foe-ink-800);
+}
+.attachmentSize {
+  font-family: var(--font-primary);
+  font-size: 12px;
+  color: var(--foe-slate);
+}

@@ -1,0 +1,18 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  direction: rtl;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  color: var(--foe-ink-500);
+  margin-bottom: 20px;
+}
+.home {
+  cursor: pointer;
+  color: var(--foe-gold-deep);
+  text-decoration: none;
+}
+.crumb {
+  display: contents;
+}

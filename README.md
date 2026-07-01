@@ -6,7 +6,8 @@ FOE Complaints, Requests & Suggestions Platform — a React (Vite) single-page a
 
 - Submit a complaint, request, or suggestion through a validated form with category, national ID, title, details, and file attachments.
 - Track submissions by national ID or a specific reference number, with mock status/response data.
-- Reusable design-system component kit (buttons, cards, inputs, select, file upload, alerts, status badges) built on CSS custom-property design tokens.
+- Reusable design-system components (Header, Footer, Card, Button, Input, Select, Textarea, Upload, StatusBadge, Alert, Skeleton, Breadcrumb) styled with CSS Modules on top of CSS custom-property design tokens.
+- Routed with React Router — every screen (home, the three forms, inquiry) is a real URL.
 
 ## Getting started
 
@@ -28,11 +29,19 @@ npm run preview
 
 ```
 src/
-  main.jsx            # React entry point
-  App.jsx             # router + screens (home, forms, inquiry)
-  components/Kit.jsx   # design-system primitives
-  assets/              # images
-  styles.css           # design tokens (colors, spacing, typography)
+  main.jsx              # React entry point
+  App.jsx               # route definitions (React Router)
+  styles.css            # design tokens (colors, spacing, typography)
+  assets/                # images
+  data/                  # form config + mock submissions (no UI)
+  components/            # reusable UI, one folder per component (.jsx + .module.css)
+    Layout/               # Header + <Outlet/> + Footer shell for every page
+    Header/ Footer/ Card/ Button/ Input/ Select/ Textarea/ Upload/
+    StatusBadge/ Alert/ Skeleton/ Breadcrumb/ SubmissionRow/ Icon/ FieldLabel/
+  pages/                  # route-level screens (.jsx + .module.css)
+    Home/                  # landing page with the four entry cards
+    FormPage/              # shared complaint/request/suggestion form
+    Inquiry/                # lookup + results list
 ```
 
 ## Notes

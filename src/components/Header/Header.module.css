@@ -1,0 +1,25 @@
+.header {
+  height: 76px;
+  background: rgb(33, 33, 33);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(20px, 5vw, 80px);
+  direction: rtl;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.logo { height: 42px; }
+.title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 17px;
+  color: #C3AB76;
+  border-inline-start: 1px solid rgba(255, 255, 255, 0.25);
+  padding-inline-start: 14px;
+}

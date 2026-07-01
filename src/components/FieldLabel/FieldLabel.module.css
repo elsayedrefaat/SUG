@@ -1,0 +1,9 @@
+.label {
+  display: flex;
+  gap: 4px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--foe-ink-800);
+}
+.required { color: var(--foe-error); }

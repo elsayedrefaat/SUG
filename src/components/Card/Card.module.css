@@ -1,0 +1,6 @@
+.card {
+  box-sizing: border-box;
+}
+.light { background: #fff; box-shadow: var(--shadow-card); }
+.mist { background: var(--foe-mist); }
+.outline { background: #fff; box-shadow: inset 0 0 0 1px var(--foe-line); }

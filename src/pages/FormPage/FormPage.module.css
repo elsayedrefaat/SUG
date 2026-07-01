@@ -1,0 +1,126 @@
+.section {
+  direction: rtl;
+  padding: clamp(28px, 4vw, 48px) clamp(20px, 5vw, 80px);
+  max-width: 760px;
+  margin: 0 auto;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.iconWrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.title {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--foe-ink-800);
+}
+.alertSpacing { margin-bottom: 20px; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.attachmentsLabel {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--foe-ink-800);
+  margin-bottom: 8px;
+}
+.attachmentsHint {
+  font-family: var(--font-primary);
+  font-size: 13px;
+  color: var(--foe-slate);
+  margin-top: 8px;
+}
+
+.submitBar {
+  position: sticky;
+  bottom: 0;
+  margin-top: 20px;
+  padding: 16px 0;
+  background: linear-gradient(0deg, var(--foe-paper) 70%, transparent);
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* success screen */
+.successWrap {
+  direction: rtl;
+  padding: clamp(40px, 6vw, 72px) clamp(20px, 5vw, 80px);
+  display: flex;
+  justify-content: center;
+}
+.successCard {
+  max-width: 560px;
+  width: 100%;
+  text-align: center;
+}
+.successIcon {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: rgba(23, 178, 106, 0.12);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--foe-success);
+  margin: 0 auto 20px;
+}
+.successTitle {
+  margin: 0 0 8px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--foe-ink-800);
+}
+.successMsg {
+  margin: 0 0 24px;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  color: var(--foe-ink-500);
+}
+.refBox {
+  background: var(--foe-mist);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 24px;
+}
+.refLabel {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  color: var(--foe-ink-500);
+  margin-bottom: 6px;
+}
+.refRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.refValue {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: var(--foe-ink-800);
+}
+.successActions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
